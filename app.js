@@ -24,7 +24,7 @@ date.innerHTML = new Date().getFullYear();
 // ********** fixed navbar ************
 
 const navbar = document.getElementById("nav");
-const topLink = document.querySelector(".top-link");
+
 
 window.addEventListener("scroll", function () {
   const scrollHeight = window.pageYOffset;
@@ -204,3 +204,17 @@ prevvBtn.addEventListener("click", function () {
   }
   showPerson(currentItem);
 });
+
+// Open donate page
+
+const btnWhite = document.querySelector (".btn-white");
+const topLink = document.querySelector (".top-link");
+btnWhite.addEventListener ("click", function() {
+  location.href = "donate.html" 
+});
+
+topLink.addEventListener ("click", function() {
+  location.href = "donate.html" 
+});
+
+
